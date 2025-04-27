@@ -108,10 +108,10 @@ def process_files(merged_json_path, paper_path, prompt_file_path, output_directo
 
 if __name__ == "__main__":
 
-    merged_json_path = "iter_code/2411.18388/merged_output.json"
-    paper_path = "data/markdown_files/output_summarized_papers/2411.18388.md"
-    prompt_file_path = "iter_code/prompt.md"
-    output_directory = "iter_code/2411.18388/code_generate"
+    merged_json_path = "iter_code/paper/merged_output.json"
+    paper_path = "markdown_files/output_summarized_papers/paper.md"
+    prompt_file_path = "prompt/code/code_gen.md"
+    output_directory = "iter_code/paper/code_generate"
 
 
     process_files(merged_json_path, paper_path, prompt_file_path, output_directory)
