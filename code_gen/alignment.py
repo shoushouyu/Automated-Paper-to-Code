@@ -85,8 +85,8 @@ def remove_comments_and_docstrings(source):
 
 if __name__ == "__main__":
     
-    code_dir = "iter_code/2411.18388_table/code_generate"
-    paper_md_path = "data/markdown_files/output_summarized_papers/2411.18388.md"
+    code_dir = "iter_code/paper/code_generate"
+    paper_md_path = "markdown_files/output_summarized_papers/paper.md"
     
     
 
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     prompt_text = construct_prompt(paper_content, files_content)
     
 
-    write_file("/home/lzj/code_for_run/paper2code/test.py", prompt_text)
+    write_file("test.py", prompt_text)
     
 
     messages = [
