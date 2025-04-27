@@ -88,9 +88,9 @@ def describe_images_in_markdown(
 
 if __name__ == "__main__":
     # Path to your paper's Markdown file
-    input_path = "paper_markdown/2411.18388.md"
+    input_path = "paper_markdown/paper.md"
     # Path to write the results (can be a new file or overwrite the existing one)
-    output_path = "paper_markdown/2411.18388.md"
+    output_path = "paper_markdown/paper.md"
     
     describe_images_in_markdown(input_path, output_path)
     print(f"Generation completed, the processed content has been written to {output_path}")
