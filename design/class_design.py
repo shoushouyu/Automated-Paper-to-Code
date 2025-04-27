@@ -34,7 +34,7 @@ def generate_design_from_json(json_file_path, design_file_path, output_directory
     
     for key, details in data.items():
         
-        content = read_file("data/markdown_files/output_summarized_papers/2411.18388.md")
+        content = read_file("markdown_files/output_summarized_papers/paper.md")
         
 
         
@@ -103,7 +103,7 @@ def generate_design_from_json(json_file_path, design_file_path, output_directory
 
 
 generate_design_from_json(
-    "data/markdown_files/step_markdown/2411.18388/optimized_code_structure_step3.json",
-    "data/markdown_files/step_markdown/2411.18388/optimized_code_structure_step3.json",
-    "iter_code/2411.18388/design_generated"
+    "markdown_files/step_markdown/paper/optimized_code_structure_step3.json",
+    "markdown_files/step_markdown/paper/optimized_code_structure_step3.json",
+    "iter_code/paper/design_generated"
 )
