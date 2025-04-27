@@ -139,9 +139,9 @@ def trans_md_json(md_path):
 
 def main():
     
-    template_path = 'repo_summaries/final_summary.txt'
-    content_path = 'data/markdown_files/output_summarized_papers/2411.18388.md'
-    output_path = 'data/markdown_files/step_markdown/2411.18388'
+    template_path = 'prompt/design/repo_template.txt'
+    content_path = 'markdown_files/paper.md'
+    output_path = 'markdown_files/step_markdown/paper'
     
     template = read_file(template_path)
     content = read_file(content_path)
