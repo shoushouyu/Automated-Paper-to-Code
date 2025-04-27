@@ -76,8 +76,8 @@ def extract_and_merge_json(directory, output_file):
 
 if __name__ == "__main__":
     # Directory containing the .py files
-    input_directory = "iter_code/2411.18388/design_generated"
-    output_json_file = "iter_code/2411.18388/merged_output.json"
+    input_directory = "iter_code/paper/design_generated"
+    output_json_file = "iter_code/paper/merged_output.json"
     
     # Extract and merge JSON
     extract_and_merge_json(input_directory, output_json_file)
