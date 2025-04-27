@@ -26,7 +26,7 @@ def main():
         prompt_text = read_file("prompt/code/finetune.md")
         
        
-        original_main_py = read_file("iter_code/2409.04867/code_generate/main.py")
+        original_main_py = read_file("iter_code/paper/code_generate/main.py")
         original_eval_py = read_file("code_generate/evaluation/evaluate.py")
         
  
@@ -50,7 +50,7 @@ def main():
         
        
         if new_main_py_code:
-            with open("iter_code/2409.04867/code_generate/main.py", "w", encoding="utf-8") as f:
+            with open("iter_code/paper/code_generate/main.py", "w", encoding="utf-8") as f:
                 f.write(new_main_py_code)
             print("main.py has been updated successfully.")
         else:
