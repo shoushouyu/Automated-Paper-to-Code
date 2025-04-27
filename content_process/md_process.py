@@ -230,7 +230,7 @@ def main(input_md_folder, output_md_folder):
     os.makedirs(output_md_folder, exist_ok=True)
 
     for filename in os.listdir(input_md_folder):
-        if filename.endswith("2411.18388_new.md"):
+        if filename.endswith("paper.md"):
             input_md_path = os.path.join(input_md_folder, filename)
             paper_name = os.path.splitext(filename)[0]
             output_md_path = os.path.join(output_md_folder, f"{paper_name}_summarized.md")
@@ -243,6 +243,6 @@ def main(input_md_folder, output_md_folder):
 
 
 if __name__ == "__main__":
-    input_md_folder = "markdown_files/paper_markdown"
-    output_md_folder = "markdown_files/output_summarized_papers"
+    input_md_folder = "markdown_files/"
+    output_md_folder = "markdown_files/"
     main(input_md_folder, output_md_folder)
