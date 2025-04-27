@@ -43,7 +43,7 @@ def run_fix_script(code_str, script_path="test.py"):
     write_file(script_path, code_str)
     process = subprocess.Popen(
         ["python", script_path],
-        cwd="iter_code/2411.18388/code_generate",
+        cwd="iter_code/paper/code_generate",
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         text=True
@@ -53,11 +53,11 @@ def run_fix_script(code_str, script_path="test.py"):
 
 if __name__ == "__main__":
     # Set working directory and file path
-    target_directory = "iter_code/2411.18388/code_generate"
+    target_directory = "iter_code/paper/code_generate"
     action_code_path = os.path.join(target_directory, "main.py")
 
     # Read the summarized paper content
-    paper_summary_path = "data/markdown_files/output_summarized_papers/2411.18388.md"
+    paper_summary_path = "markdown_files/output_summarized_papers/paper.md"
     paper_summary_content = read_file(paper_summary_path)
 
     iteration = 0
