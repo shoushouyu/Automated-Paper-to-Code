@@ -5,6 +5,8 @@ We've put a lot of effort into maintaining this repository 🚀, and we hope it 
 
 ## Chapter
 [Overview](#Overview)
+[Results](#Results)
+[Quick Start](#Quick Start)
 
 ## Overview
 This repository is created for the paper “[AutoP2C: An LLM-Based Agent Framework for Code Repository Generation from Multimodal Content in Academic Papers](https://arxiv.org/pdf/2504.20115).”, we focus on how to automatically generate a code repository for an academic paper with multimodal content and call it the ``Paper-to-Code'' (P2C) task, as shown in Figure 1.
@@ -20,6 +22,8 @@ To fill this research-to-implementation gap, we propose AutoP2C, a multi-agent f
 AutoP2C comprises four stages. In the first stage, it extracts universal code structures from established repositories to construct architectural blueprints. The next stage involves multimodal content parsing, which integrates information from text, diagrams, and tables into a unified representation. In the third stage, divide-and-conquer task planning decomposes complex implementations into hierarchical subtasks with clearly defined interfaces. 
 Finally, execution feedback-driven debugging localizes errors and aligns the code with the multimodal specifications of the paper through iterative testing. Unlike previous approaches that treat code generation as a unimodal text-to-text translation problem, AutoP2C takes advantage of multimodal understanding to capture the full spectrum of information presented in academic papers. 
 
+
+## Results
 To provide a comprehensive evaluation, we consider two complementary benchmarks, Paper2Repo, and PaperBench Code-Dev, each emphasizing a different aspect of repository quality. 
 (1) To evaluate how faithfully AutoP2C implements diverse models and algorithmic designs described in each paper, we constructed a brand-new benchmark called **Paper2Repo**, which comprises eight recent research papers all published after 2024. Each paper contains all the content required for the reproduction of the code repository. These papers are selected from “[paperwithcode.com](paperswithcode.com)”, and each has a corresponding GitHub repository as the upper bound for comparison. The benchmark spans six ML tasks (including training strategy optimization, node classification, model compression, parameter-efficient fine-tuning, network pruning, and image classification) and three modal types of datasets (containing computer vision, natural language processing, and graph-related datasets). We also established baselines using two state-of-the-art LLMs: OpenAI's recently released o1 and DeepSeek-R1, both known for their advanced code generation capabilities. The results are shown as follows: 
 
@@ -29,6 +33,8 @@ To provide a comprehensive evaluation, we consider two complementary benchmarks,
 
 ![paperbench](result_2.jpg)
 
+
+## Quick Start
 We have now released an initial version of the code. You can have a try by following the steps.  
 
 You can first translate the paper using [MinerU](https://github.com/opendatalab/MinerU) and put the transformed paper content under markdown_files/paper.md. Then, execute the run.sh.
