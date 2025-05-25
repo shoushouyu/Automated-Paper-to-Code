@@ -1,5 +1,5 @@
 # AutoP2C: An LLM-Based Agent Framework for Code Repository Generation from Multimodal Content in Academic Papers
-## If You Find This Paper or Code Helpful, Please Star Our Project
+If You Find This Paper or Code Helpful, Please Star Our Project :point_up:
 ## Chapter
 [Overview](#Overview)
 
