@@ -4,11 +4,11 @@ If You Find This Paper or Code Helpful, Please Star Our Project ⭐
 We've put a lot of effort into maintaining this repository 🚀, and we hope it proves useful to you 🙏.
 
 ## Chapter
-[Overview](#Overview)
+1. [Overview](#Overview)
 
-[Results](#Results)
+2. [Results](#Results)
 
-[Quick Start](#Quick-Start)
+3. [Quick Start](#Quick-Start)
 
 ## Overview
 This repository is created for the paper “[AutoP2C: An LLM-Based Agent Framework for Code Repository Generation from Multimodal Content in Academic Papers](https://arxiv.org/pdf/2504.20115).”, we focus on how to automatically generate a code repository for an academic paper with multimodal content and call it the ``Paper-to-Code'' (P2C) task, as shown in Figure 1.
