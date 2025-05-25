@@ -23,4 +23,4 @@ To provide a comprehensive evaluation, we consider two complementary benchmarks,
 
 We have now released an initial version of the code. You can have a try by following the steps.  
 
-You can first translate the paper using MinerU and put the transformed paper content under markdown_files/paper.md. Then, execute the run.sh.
+You can first translate the paper using [MinerU](https://github.com/opendatalab/MinerU) and put the transformed paper content under markdown_files/paper.md. Then, execute the run.sh.
