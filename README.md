@@ -55,17 +55,7 @@ It will reproduce, as faithfully as possible, the methods and models described i
 bash run_simple.sh
 ```
 
-This will create a folder that tests only the completeness of the repository; please refer to https://github.com/openai/preparedness for the testing methodology. You can test a single paper by running:
-
-```bash
-python -m paperbench.scripts.run_judge \
-  --submission-path /your/path/to/code_repository \
-  --paper-id semantic-self-consistency \
-  --judge simple \
-  --model o3-mini \
-  --out-dir /your/path/to/save_grades \
-  --code-only
-```
+This will create a folder that tests only the completeness of the repository; please refer to https://github.com/openai/preparedness for the testing methodology.
 
 
 
