@@ -43,16 +43,22 @@ We have now released an initial version of the code. You can have a try by follo
 
 You can first translate the paper using [MinerU](https://github.com/opendatalab/MinerU) and put the transformed paper content under markdown_files/paper.md. Then, execute the run.sh.
 
+```markdown
 If you want to generate a fully executable code repository for your paper, you can try running
-\begin{verbatim}
+
+```bash
 bash run.sh
-\end{verbatim}
+```
+
 It will reproduce, as faithfully as possible, the methods and models described in your paper. If you just want to test the performance of this code on PaperBench Code-Dev, you can execute
-\begin{verbatim}
+
+```bash
 bash run_simple.sh
-\end{verbatim}
-This will create a folder that tests only the completeness of the repository; please refer to \url{https://github.com/openai/preparedness} for the testing methodology. You can test a single paper by running:
-\begin{verbatim}
+```
+
+This will create a folder that tests only the completeness of the repository; please refer to https://github.com/openai/preparedness for the testing methodology. You can test a single paper by running:
+
+```bash
 python -m paperbench.scripts.run_judge \
   --submission-path /home/lzj/code_for_run/paper2code/iter_code/semantic/code_generate \
   --paper-id semantic-self-consistency \
@@ -60,5 +66,7 @@ python -m paperbench.scripts.run_judge \
   --model o3-mini \
   --out-dir /home/lzj/code_for_run/paper2code/iter_code/semantic/grades \
   --code-only
-\end{verbatim}
+```
+```
+
 
