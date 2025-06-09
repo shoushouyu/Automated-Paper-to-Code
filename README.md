@@ -43,7 +43,6 @@ We have now released an initial version of the code. You can have a try by follo
 
 You can first translate the paper using [MinerU](https://github.com/opendatalab/MinerU) and put the transformed paper content under markdown_files/paper.md. Then, execute the run.sh.
 
-```markdown
 If you want to generate a fully executable code repository for your paper, you can try running
 
 ```bash
@@ -67,6 +66,6 @@ python -m paperbench.scripts.run_judge \
   --out-dir /home/lzj/code_for_run/paper2code/iter_code/semantic/grades \
   --code-only
 ```
-```
+
 
 
