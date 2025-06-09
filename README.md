@@ -59,11 +59,11 @@ This will create a folder that tests only the completeness of the repository; pl
 
 ```bash
 python -m paperbench.scripts.run_judge \
-  --submission-path /home/lzj/code_for_run/paper2code/iter_code/semantic/code_generate \
+  --submission-path /your/path/to/code_repository \
   --paper-id semantic-self-consistency \
   --judge simple \
   --model o3-mini \
-  --out-dir /home/lzj/code_for_run/paper2code/iter_code/semantic/grades \
+  --out-dir /your/path/to/save_grades \
   --code-only
 ```
 
